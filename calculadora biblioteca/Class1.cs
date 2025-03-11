@@ -49,6 +49,7 @@ namespace  calculadora_biblioteca
                 throw new DivideByZeroException("El denominador no puede ser cero.");
             return numerador / denominador;
         }
-        // rafa el agrega otra operacion porfavor 
+        // operacion rafa
+
     }
 }  
