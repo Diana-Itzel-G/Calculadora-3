@@ -50,16 +50,15 @@ namespace  calculadora_biblioteca
             return numerador / denominador;
         }
         // operacion rafa
-         public static double LogaritmoNatural(double num)
-        {
-            if (num <= 0)
-            {
-                Console.WriteLine("Error: No se puede calcular el logaritmo de un número menor o igual a cero.");
-                return double.NaN;
-            }
-            return Math.Log(num);
-            //logaritmo natual diego    
-        }
+
+
+        //operacion Diego
+               public static double LogaritmoNatural(double numero)
+       {
+           if (numero <= 0)
+               throw new ArgumentException("No se puede calcular el logaritmo natural de un número menor o igual a cero.");
+           return Math.Log(numero);
+       }
 
 
     }
